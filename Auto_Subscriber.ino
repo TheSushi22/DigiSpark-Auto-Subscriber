@@ -18,7 +18,7 @@ void loop() {
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
   //Incase of Chromebook
-  DigiKeyboard.sendKeyStroke(KEY_T,MOD_CONTROL_LEFT);
+  DigiKeyboard.sendKeyStroke(KEY_N,MOD_CONTROL_LEFT);
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_L,MOD_CONTROL_LEFT);
   DigiKeyboard.delay(300);
@@ -29,7 +29,8 @@ void loop() {
   DigiKeyboard.delay(100);
   DigiKeyboard.print("?sub_confirmation=1");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(4500);
+  //Large delay in order to let Youtube load
+  DigiKeyboard.delay(7500);
   //Selects the subscribe button using the TAB key
   DigiKeyboard.sendKeyStroke(KEY_TAB);
   DigiKeyboard.delay(100);
